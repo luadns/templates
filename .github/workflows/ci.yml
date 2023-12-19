@@ -28,7 +28,8 @@ jobs:
       - name: build
         run: |
           luarocks install busted
+          luarocks install --only-deps luadns-templates-dev-1.rockspec
 
       - name: test
         run: |
-          busted -o utfTerminal
+          luarocks test
