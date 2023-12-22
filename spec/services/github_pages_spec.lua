@@ -1,4 +1,4 @@
-T = require "templates.github_pages"
+T = require "services.github_pages"
 
 describe("GitHub Pages", function()
     it("should create apex alias record", function()

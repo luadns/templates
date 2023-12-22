@@ -1,4 +1,4 @@
-T = require "templates.netlify"
+T = require "services.netlify"
 
 describe("Netlify", function()
     it("should create apex alias record", function()

@@ -1,4 +1,4 @@
-T = require "templates.shopify"
+T = require "services.shopify"
 
 describe("Shopify", function()
     it("should create records", function()

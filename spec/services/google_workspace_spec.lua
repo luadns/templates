@@ -1,4 +1,4 @@
-T = require "templates.google_workspace"
+T = require "services.google_workspace"
 
 describe("Google Workspace", function()
     it("should create mail cname record", function()
