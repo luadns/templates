@@ -18,6 +18,9 @@ System templates for common services.
 -- File: example.com.lua
 -- Zone: example.com
 
+-- Load system templates.
+local templates = require("templates")
+
 -- Add Google Workspace records.
 templates:google_workspace()
 
