@@ -1,9 +1,9 @@
 M = {}
 
-github_pages = require "services.github_pages"
-google_workspace = require "services.google_workspace"
-netlify = require "services.netlify"
-shopify = require "services.shopify"
+local github_pages = require "services.github_pages"
+local google_workspace = require "services.google_workspace"
+local netlify = require "services.netlify"
+local shopify = require "services.shopify"
 
 table.unpack = table.unpack or unpack -- 5.1 compatibility
 
