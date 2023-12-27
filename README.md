@@ -9,6 +9,7 @@ System templates for common services.
 
 * [GitHub Pages](templates/github_pages.lua)
 * [Google Workspace](templates/google_workspace.lua)
+* [Mailgun](templates/mailgun.lua)
 * [Netlify](templates/netlify.lua)
 * [Shopify](templates/shopify.lua.lua)
 
