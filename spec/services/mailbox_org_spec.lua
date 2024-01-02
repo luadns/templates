@@ -1,7 +1,7 @@
 T = require "services.mailbox_org"
 
 describe("Mailbox.org", function()
-    it("should create email cname record", function()
+    it("should create dkim cname record", function()
         local records = T:records()
 
         assert.in_array({
