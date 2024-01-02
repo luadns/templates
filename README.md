@@ -9,6 +9,7 @@ System templates for common services.
 
 * [GitHub Pages](services/github_pages.lua)
 * [Google Workspace](services/google_workspace.lua)
+* [Mailbox.org](services/mailbox.org.lua)
 * [Mailgun](services/mailgun.lua)
 * [Netlify](services/netlify.lua)
 * [Office 365](services/office365.lua)
