@@ -29,6 +29,8 @@ function alias(domain, target, ttl)
 end
 
 function caa(domain, value, tag, flag, ttl)
+    tag = tag or "issue"
+    flag = flag or 0
     ttl = ttl or 3600
     return {
         name = domain,
@@ -49,6 +51,8 @@ function cname(domain, target, ttl)
 end
 
 function ds(domain, keytag, digest, algorithm, digest_type, ttl)
+    algorithm = algorithm or 13
+    digest_type = digest_type or 2
     ttl = ttl or 3600
     return {
         name = domain,
@@ -69,6 +73,7 @@ function forward(domain, to, ttl)
 end
 
 function mx(domain, exchanger, prio, ttl)
+    prio = prio or 0
     ttl = ttl or 3600
     return {
         name = domain,
@@ -99,6 +104,7 @@ function ptr(domain, host, ttl)
 end
 
 function redirect(domain, target, mode, ttl)
+    mode = mode or 0
     ttl = ttl or 3600
     return {
         name = domain,
@@ -119,7 +125,9 @@ function spf(domain, text, ttl)
 end
 
 function srv(domain, target, port, prio, weight, ttl)
-    ttl = ttl or 3600
+    prio   = prio or 0
+    weight = weight or 0
+    ttl    = ttl or 3600
     return {
         name = domain,
         type = "SRV",
@@ -129,6 +137,7 @@ function srv(domain, target, port, prio, weight, ttl)
 end
 
 function sshfp(domain, algorithm, fp_value, fp_type, ttl)
+    fp_type = fp_type or 1
     ttl = ttl or 3600
     return {
         name = domain,
@@ -139,6 +148,8 @@ function sshfp(domain, algorithm, fp_value, fp_type, ttl)
 end
 
 function tlsa(domain, usage, certificate, selector, matching_type, ttl)
+    selector = selector or 1
+    matching_type = matching_type or 1
     ttl = ttl or 3600
     return {
         name = domain,
