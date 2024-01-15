@@ -13,6 +13,7 @@ System templates for common services.
 * [Netlify](services/netlify.lua)
 * [Office 365](services/office365.lua)
 * [Shopify](services/shopify.lua)
+* [WordPress](services/wordpress.lua)
 
 ## Usage
 

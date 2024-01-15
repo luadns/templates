@@ -6,6 +6,7 @@ local mailgun = require "services.mailgun"
 local netlify = require "services.netlify"
 local office365 = require "services.office365"
 local shopify = require "services.shopify"
+local wordpress = require "services.wordpress"
 
 table.unpack = table.unpack or unpack -- 5.1 compatibility
 
@@ -37,6 +38,11 @@ end
 M.shopify = function(_, ...)
     local arg = { ... }
     return shopify.records(table.unpack(arg))
+end
+
+M.wordpress = function(_, ...)
+    local arg = { ... }
+    return wordpress.records(table.unpack(arg))
 end
 
 return M
