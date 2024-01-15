@@ -4,6 +4,7 @@ local github_pages = require "services.github_pages"
 local google_workspace = require "services.google_workspace"
 local mailgun = require "services.mailgun"
 local netlify = require "services.netlify"
+local office365 = require "services.office365"
 local shopify = require "services.shopify"
 
 table.unpack = table.unpack or unpack -- 5.1 compatibility
@@ -26,6 +27,11 @@ end
 M.netlify = function(_, ...)
     local arg = { ... }
     return netlify.records(table.unpack(arg))
+end
+
+M.office365 = function(_, ...)
+    local arg = { ... }
+    return office365.records(table.unpack(arg))
 end
 
 M.shopify = function(_, ...)

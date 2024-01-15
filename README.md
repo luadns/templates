@@ -11,6 +11,7 @@ System templates for common services.
 * [Google Workspace](templates/google_workspace.lua)
 * [Mailgun](templates/mailgun.lua)
 * [Netlify](templates/netlify.lua)
+* [Office 365](templates/office365.lua)
 * [Shopify](templates/shopify.lua.lua)
 
 ## Usage
