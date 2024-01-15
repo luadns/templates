@@ -7,12 +7,12 @@ System templates for common services.
 
 ## Services
 
-* [GitHub Pages](templates/github_pages.lua)
-* [Google Workspace](templates/google_workspace.lua)
-* [Mailgun](templates/mailgun.lua)
-* [Netlify](templates/netlify.lua)
-* [Office 365](templates/office365.lua)
-* [Shopify](templates/shopify.lua.lua)
+* [GitHub Pages](services/github_pages.lua)
+* [Google Workspace](services/google_workspace.lua)
+* [Mailgun](services/mailgun.lua)
+* [Netlify](services/netlify.lua)
+* [Office 365](services/office365.lua)
+* [Shopify](services/shopify.lua)
 
 ## Usage
 
