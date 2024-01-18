@@ -1,3 +1,7 @@
+-- Global variables
+_a = "example.com"
+
+-- Global functions
 function a(domain, addr, ttl)
     ttl = ttl or 3600
     return {
