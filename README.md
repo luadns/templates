@@ -45,6 +45,28 @@ Example:
 * [services/github_pages.lua](services/github_pages.lua)
 * [spec_services/github_pages_spec.lua](spec/services/github_pages_spec.lua)
 
+## Development
+
+For templates development you need to install [Lua](https://www.lua.org) v5.1 and [luarocks](https://luarocks.org) package manager.
+
+Run `make setup` to install packages required to run the unit tests.
+
+```bash
+$ make setup
+luarocks install busted
+Installing https://luarocks.org/busted-2.2.0-1.src.rock
+[...]
+Stopping after installing dependencies for luadns-templates dev-1
+```
+
+Run `make test` to execute the unit tests.
+
+```bash
+$ make test
+[...]
+20 successes / 0 failures / 0 errors / 0 pending : 0.013063 seconds
+```
+
 ## Contributing
 
 To add a new template fork the repository and create a pull request.
