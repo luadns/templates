@@ -17,7 +17,7 @@ M.records     = function(_, verification_record)
         mx("", "aspmx2.migadu.com", 20),
 
         -- DMARC and DKIM, required for sending.
-        txt("_dmarc', 'v=DMARC1; p=quarantine;"),
+        -- txt("_dmarc", "v=DMARC1; p=quarantine;"),
         cname('key1._domainkey', 'key1.' .. _a .. '._domainkey.migadu.com.'),
         cname('key2._domainkey', 'key2.' .. _a .. '._domainkey.migadu.com.'),
         cname('key3._domainkey', 'key3.' .. _a .. '._domainkey.migadu.com.'),

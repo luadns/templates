@@ -69,6 +69,25 @@ $ make test
 20 successes / 0 failures / 0 errors / 0 pending : 0.013063 seconds
 ```
 
+## DKIM
+
+The following services requires setting a DKIM policy to work properly:
+
+* Google Workspace
+* Mailbox.org
+* Migadu
+
+The DKIM uses published keys in the DNS or IP addresses specified in the SPF
+record to authenticate emails. The DKIM policy has precedence over SPF policy.
+
+A typical policy would be to `quarantine`, this applies to the domain and all
+its subdomains without an explicit policy.
+
+```lua
+-- Deliver authenticated emails in the Inbox and others in the Spam/Junk folder.
+txt("_dmarc", "v=DMARC1; p=quarantine;"),
+```
+
 ## Contributing
 
 To add a new template fork the repository and create a pull request.
