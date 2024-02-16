@@ -1,6 +1,6 @@
 T = require "services.migadu"
 
-describe("Mailgun", function()
+describe("Migadu", function()
     it("should create dkim cname record", function()
         local records = T:records("beepboop")
 
