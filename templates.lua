@@ -19,42 +19,42 @@ end
 
 M.google_workspace = function(_, ...)
     local arg = { ... }
-    return google_workspace.records(table.unpack(arg))
+    return google_workspace:records(table.unpack(arg))
 end
 
 M.mailbox_org = function(_, ...)
     local arg = { ... }
-    return mailbox_org.records(table.unpack(arg))
+    return mailbox_org:records(table.unpack(arg))
 end
 
 M.mailgun = function(_, ...)
     local arg = { ... }
-    return mailgun.records(table.unpack(arg))
+    return mailgun:records(table.unpack(arg))
 end
 
 M.migadu = function(_, ...)
     local arg = { ... }
-    return migadu.records(table.unpack(arg))
+    return migadu:records(table.unpack(arg))
 end
 
 M.netlify = function(_, ...)
     local arg = { ... }
-    return netlify.records(table.unpack(arg))
+    return netlify:records(table.unpack(arg))
 end
 
 M.office365 = function(_, ...)
     local arg = { ... }
-    return office365.records(table.unpack(arg))
+    return office365:records(table.unpack(arg))
 end
 
 M.shopify = function(_, ...)
     local arg = { ... }
-    return shopify.records(table.unpack(arg))
+    return shopify:records(table.unpack(arg))
 end
 
 M.wordpress = function(_, ...)
     local arg = { ... }
-    return wordpress.records(table.unpack(arg))
+    return wordpress:records(table.unpack(arg))
 end
 
 return M
